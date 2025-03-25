@@ -38,3 +38,46 @@
 - **Servant**: _Defines common functionality for a group of classes._
 - **Specification**: _Recombinable business logic in a Boolean fashion._
 - **Blackboard**: _Utilizes a common knowledge base, the "blackboard," where different subsystems contribute information to solve a problem collaboratively._
+
+**Concurrency Patterns:**
+
+- **Active Object**: _Decouples method execution from method invocation to simplify multithreading._
+- **Guarded Suspension**: _Suspends execution until a condition is met, used in concurrency scenarios._
+- **Monitor Object**: _Encapsulates access to an object that can be accessed by multiple threads, ensuring mutual exclusion and synchronization._
+- **Thread Pool**: _Manages a collection of threads to perform tasks, ensuring that threads are reused efficiently._
+
+**Architectural Patterns:**
+
+- **Event Sourcing**: _Stores the state of a system as a sequence of events rather than the current state._
+- **CQRS (Command Query Responsibility Segregation)**: _Segregates the responsibilities of command (writing data) and query (reading data) to improve scalability and performance._
+- **Microservices Architecture**: _Architecting a system as a collection of loosely coupled services._
+- **Layered Pattern**: _Separates the system into layers such as presentation, business, data access, and service layers to promote separation of concerns._
+
+**User Interface Patterns:**
+
+- **Model-View-Controller (MVC)**: _Separates the concerns of data (model), user interface (view), and interaction logic (controller)._
+- **Model-View-ViewModel (MVVM)**: _An extension of MVC, used primarily in applications with data-binding like WPF or Xamarin._
+- **Presenter-First (or MVP)**: _Used in UI design where the "Presenter" acts as the middleman between the model and the view._
+
+**Cloud and Distributed Systems Patterns:**
+
+- **Circuit Breaker**: _Prevents a system from repeatedly attempting to execute an operation that's likely to fail, improving system resilience._
+- **API Gateway**: _Acts as a single entry point for multiple microservices, often used in microservices architectures._
+- **Event-Driven Architecture**: _Systems that are driven by events, where components react to the occurrence of events._
+
+**Data Management Patterns:**
+
+- **Lazy Load**: _Defers loading an object until it's actually needed, commonly used in databases and object-relational mapping (ORM) systems._
+- **Repository Pattern**: _Encapsulates the logic for accessing data sources and abstracts it from the rest of the application._
+- **Data Mapper**: _Separates the in-memory objects from the database schema, allowing the objects to remain unaware of the database's structure._
+
+**Security Patterns:**
+
+- **Access Control List (ACL)**: _Defines permissions for various users or groups for accessing resources in the system._
+- **Token-Based Authentication**: _Uses tokens (like JWT) for authenticating users without maintaining server-side sessions._
+
+**Domain-Driven Design (DDD) Patterns:**
+
+- **Aggregate**: _Represents a group of related objects that are treated as a unit for data changes._
+- **Domain Event**: _An event that signifies a state change in the domain, often used in CQRS._
+- **Value Object**: _An object that represents a concept in the domain that has no identity and is immutable._
