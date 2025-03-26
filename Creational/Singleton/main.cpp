@@ -24,10 +24,26 @@
 #include <iostream>
 #include <memory>
 
+/**
+ * @brief A template class to manage the singleton instance of any type `T`.
+ *
+ * This class uses a static lambda to ensure lazy initialization of the singleton instance of type `T`.
+ * The singleton instance is created only when `getInstance()` is called for the first time.
+ *
+ * @tparam T The type of the singleton instance.
+ */
 template <typename T>
 class SingletonCreator
 {
 public:
+    /**
+     * @brief Returns the singleton instance of type `T`.
+     *
+     * This method uses a static lambda to create and return the singleton instance.
+     * The instance is created only when this method is called for the first time.
+     *
+     * @return T& The singleton instance of type `T`.
+     */
     static T& getInstance()
     {
         // Static lambda ensures only one instance of T is created
@@ -40,16 +56,33 @@ public:
     }
 };
 
-// Simple class, for example, Dog
+/**
+ * @brief A simple class representing a Dog.
+ *
+ * The Dog class provides a `bark()` method to demonstrate the Singleton pattern with the `SingletonCreator` template.
+ */
 class Dog
 {
 public:
+    /**
+     * @brief Makes the dog bark.
+     *
+     * This function simulates a dog barking by printing a message to the console.
+     */
     void bark() const
     {
         std::cout << "Woof! Woof!" << std::endl;
     }
 };
 
+/**
+ * @brief Main function demonstrating the Singleton pattern.
+ *
+ * This function accesses the singleton instance of the `Dog` class using the `SingletonCreator`
+ * template, and ensures that the same instance is returned each time.
+ *
+ * @return int Return status code.
+ */
 int main()
 {
     // Accessing the Dog singleton via SingletonCreator
