@@ -20,6 +20,7 @@
 - **Proxy**: _Provides a surrogate or placeholder for another object to control access to it._
 - **Dependency Injection**: _Injects dependencies into a class instead of hardcoding them, improving testability and flexibility._
 - **Front Controller**: _Centralizes request handling by channeling all requests through a single handler, commonly used in web applications to manage navigation and authorization._
+- **Fluent Interface**: _A pattern where method calls are chained together in a readable and expressive way. Typically, methods return *this._
 
 **Behavioral Patterns:** Concerned with algorithms and the assignment of responsibilities between objects.
 
