@@ -66,8 +66,7 @@
 - **Layered Pattern**: _Separates the system into layers such as presentation, business, data access, and service layers to promote separation of concerns._
 - **Service Mesh**: _Used to manage microservices communication in a more structured way, often used in conjunction with microservices architectures._
 - **Serverless Architecture**: _A cloud-native architecture style where the server management is abstracted away, and you only focus on the application logic._
-- **Entity Component System (ECS)**: _An architectural pattern that decouples data (components) from behavior (systems),
- * improving flexibility and performance in complex applications such as game engines._
+- **Entity Component System (ECS)**: _An architectural pattern that decouples data (components) from behavior (systems), improving flexibility and performance in complex applications such as game engines._
 
 
 **User Interface Patterns:**
